@@ -21,10 +21,12 @@ const FoodData= new mongoose.Schema({
         require:true,
         trim:true
     },
-    options:{
-        half:Number,
-        full:Number
-    },
+    options:[
+        {
+            half:Number,
+            full:Number
+        }
+    ],
    
 description:{
     type:String,
