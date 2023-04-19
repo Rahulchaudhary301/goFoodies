@@ -7,7 +7,7 @@ const {
     isValidPassword,
 } = require("../validator/validation");
 
-const bcrypt= require('bcrypt')
+const bcrypt= require('bcryptjs')
 
 const jwt= require('jsonwebtoken')
 

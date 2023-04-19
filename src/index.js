@@ -10,6 +10,10 @@ app.use(express.json())
 
 app.use(cors())
 
+// app.use(cors({
+//     origin:['http://localhost:3000','https://gofoodies.netlify.app/']
+// }))
+
   
   mongoose.connect('mongodb+srv://RahulChaudhary:Rahul321@cluster1.42h1ws9.mongodb.net/gotomearn?retryWrites=true&w=majority')
    .then(()=>{
