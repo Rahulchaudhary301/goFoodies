@@ -27,8 +27,8 @@ app.use(cors())
 app.use("/",router)
 
 
-app.listen(process.env.PORT ||3000 , function (){
-    console.log("app is listen on 3000 PORT")
+app.listen(process.env.PORT ||8000 , function (){
+    console.log("app is listen on 8000 PORT")
 })
 
 
