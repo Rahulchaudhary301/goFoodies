@@ -8,8 +8,7 @@ const OrderCreate= async function(req,res){
     try{
         let data = req.body.order_data
         await data.splice(0,0,{Order_date:req.body.order_date})
-        console.log(data)
-      let existdata= await Order.findOne({ 'email': req.body.email })
+        let existdata= await Order.findOne({ 'email': req.body.email })
        
     if(existdata===null) {
         const resul=  await Order.create({ email: req.body.email, order_data:[data]})
